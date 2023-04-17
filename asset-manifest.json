@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Travel/static/css/main.2267c13b.css",
+    "main.js": "/Travel/static/js/main.954c8932.js",
+    "static/media/loc3.png": "/Travel/static/media/loc3.4a49d8556bbe56f132cc.png",
+    "static/media/plan1.png": "/Travel/static/media/plan1.96a9363d502584d271ad.png",
+    "static/media/plan2.png": "/Travel/static/media/plan2.db39b168d20844ef0c8b.png",
+    "static/media/loc1.png": "/Travel/static/media/loc1.ce1146cace0ef871fcc7.png",
+    "static/media/loc2.png": "/Travel/static/media/loc2.ed3aa7aedb173c0c2f25.png",
+    "static/media/plan3.png": "/Travel/static/media/plan3.687c590aa1024f3ce49c.png",
+    "static/media/back.jpg": "/Travel/static/media/back.2fea9d3c0722e26addb0.jpg",
+    "static/media/ban5.png": "/Travel/static/media/ban5.9cfa78a845e5f973c664.png",
+    "static/media/ban1.png": "/Travel/static/media/ban1.9917b03f792111df5033.png",
+    "static/media/ban2.png": "/Travel/static/media/ban2.62d99f0ee6d0f3151495.png",
+    "index.html": "/Travel/index.html",
+    "main.2267c13b.css.map": "/Travel/static/css/main.2267c13b.css.map",
+    "main.954c8932.js.map": "/Travel/static/js/main.954c8932.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2267c13b.css",
+    "static/js/main.954c8932.js"
+  ]
+}
