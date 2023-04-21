@@ -1,0 +1,48 @@
+.post {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  margin-top: 50px;
+  .post__left {
+    width: 30%;
+    margin: 40px;
+    .post__name {
+      font-family: 'Urbanist';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      color: #2a2a2a;
+    }
+    .post__city {
+      font-family: 'Urbanist';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 29px;
+      color: #5B5B5B;
+    }
+  }
+  .post__right {
+    margin: 40px;
+    .post__topic {
+      font-family: 'Urbanist';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 50px;
+
+      color: #000000;
+    }
+    .post__message {
+      font-family: 'Urbanist';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 29px;
+      color: #000000;
+      text-align: start;
+    }
+
+  }
+}

@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  background-color: rgba(23, 63, 53, 0.99);;
+  opacity: 1;
+  justify-content: space-around;
+  margin: 0;
+  padding: 10px;
+
+  .logo {
+    justify-content: flex-start;
+    align-items: center;
+
+    .logo__img {
+      width: 85px;
+      height: 75px;
+    }
+
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .links__nav {
+      font-family: 'Urbanist';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 29px;
+      color: #FFFFFF;
+      text-decoration: none;
+      margin: 0 40px 0 40px;
+    }
+  }
+
+  .header__left {
+    display: flex;
+    align-items: center;
+
+    .search__img {
+      width: 25px;
+      height: 25px;
+      margin-right: 20px;
+    }
+
+    .login__header {
+      font-family: 'Urbanist';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 29px;
+      color: #FFFFFF;
+      text-decoration: none;
+      margin: 0 20px 0 20px;
+      background: none;
+    }
+
+    .login__header2 {
+      font-family: 'Urbanist';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      color: black;
+      text-decoration: none;
+      margin: 0 20px 0 20px;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      gap: 10px;
+      width: 100px;
+      background: #FFFFFF;
+      border-radius: 40px;
+    }
+
+
+  }
+}
