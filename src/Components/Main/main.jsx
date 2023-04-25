@@ -15,7 +15,19 @@ import loc3 from "../Assets/loc3.png";
 import React, {useState} from "react";
 import Modal from "../Modal/Modal";
 
-const Main = () => {
+
+const Locations = (props) => {
+    return (
+        <div className="location__card">
+            <img className="location__img" src={props.locations.image} alt=""/>
+            <p className="location__p">{props.locations.country}</p>
+            <h3 className="location__h3">{props.locations.place}</h3>
+        </div>
+    )
+}
+
+const Main = (props) => {
+    let locationItems = props.locations.map(locations => <Locations locations={locations}/>)
     return (
 
         <section className="container">
@@ -111,6 +123,17 @@ const Main = () => {
                         <p className="loc__p2">The Blyde River Canyon</p>
                     </div>
                 </div>
+            </section>
+            <section className="search">
+                <div className="search__text">
+                    <h3 className="search__h3">Your Recent Searches</h3>
+                    <p className="search__p">Here are some of the places you have searched</p>
+
+                </div>
+            </section>
+            <section className="location">
+                {locationItems}
+
             </section>
         </section>
 

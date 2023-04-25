@@ -6,6 +6,7 @@ import PostsContainer from "./Components/Blog/PostsContainer";
 import {useState} from "react";
 import Modal from "./Components/Modal/Modal";
 import Destination from "./Components/Destination/Destination";
+import state from "./Data/Data";
 
 
 function App(props) {
@@ -15,9 +16,9 @@ function App(props) {
             <Header active={modalActive} setActive={setModalActive}/>
             <Modal active={modalActive} setActive={setModalActive}/>
             <Routes>
-                <Route path='/' element={<Main/>}/>
+                <Route path='/' element={<Main locations={state.locations}/>}/>
                 <Route path='/posts' element={<PostsContainer store={props.store} dispatch={props.dispatch}/>}/>
-                <Route path='/destination' element={<Destination/>}></Route>
+                <Route path='/destination' element={<Destination places={state.places}/>}></Route>
             </Routes>
         </div>
     );

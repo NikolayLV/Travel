@@ -251,3 +251,66 @@
 .header1 {
   display: none;
 }
+
+.search {
+  padding-right: 5%;
+  padding-left: 5%;
+  .search__text {
+    margin-top: 100px;
+    .search__h3 {
+      font-family: 'Urbanist';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 58px;
+      color: #000000;
+      text-align: start;
+    }
+
+    .search__p {
+      font-family: 'Urbanist';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      color: #404040;
+      text-align: start;
+    }
+  }
+}
+
+.location {
+  display: flex;
+  padding-left: 5%;
+  padding-right: 5%;
+  justify-content: space-between;
+
+  .location__card {
+    margin-top: 100px;
+
+    .location__img {
+      width: 330px;
+      height: 300px;
+      border-radius: 20px;
+    }
+    .location__h3 {
+      font-family: 'Urbanist';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 43px;
+      color: #000000;
+      text-align: start;
+    }
+    .location__p {
+      font-family: 'Urbanist';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 29px;
+      text-align: start;
+      color: #5B5B5B;
+    }
+  }
+}
+
