@@ -7,6 +7,8 @@ import {useState} from "react";
 import Modal from "./Components/Modal/Modal";
 import Destination from "./Components/Destination/Destination";
 import state from "./Data/Data";
+import Footer from "./Components/Footer/footer";
+import Stories from "./Components/Stories/Stories";
 
 
 function App(props) {
@@ -19,7 +21,9 @@ function App(props) {
                 <Route path='/' element={<Main locations={state.locations}/>}/>
                 <Route path='/posts' element={<PostsContainer store={props.store} dispatch={props.dispatch}/>}/>
                 <Route path='/destination' element={<Destination places={state.places}/>}></Route>
+                <Route path='/stories' element={<Stories articles={state.articles}/>}></Route>
             </Routes>
+            <Footer/>
         </div>
     );
 }

@@ -1,0 +1,30 @@
+.footer {
+  background-color: #4169E1;
+  margin: 0;
+  padding: 0;
+
+  .footer__info {
+    text-align: center;
+    justify-content: center;
+    .footer__p {
+      font-family: 'Urbanist';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      color: #FFFFFF;
+      margin: 100px 0 0 0;
+      padding: 40px;
+    }
+    .footer__p2 {
+      font-family: 'Urbanist';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 29px;
+      color: #b2b2b2;
+      padding: 20px;
+      margin: 0;
+    }
+  }
+}

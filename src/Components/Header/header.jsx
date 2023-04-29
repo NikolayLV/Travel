@@ -12,7 +12,7 @@ const Header = ({active, setActive}) => {
             <div className="links">
                 <NavLink to="/" className="links__nav">Home</NavLink>
                 <NavLink to="/destination" className="links__nav">Destination</NavLink>
-                <NavLink to="/" className="links__nav">Stories</NavLink>
+                <NavLink to="/stories" className="links__nav">Stories</NavLink>
                 <NavLink to="/posts" className="links__nav">Blog</NavLink>
                 <NavLink to="/" className="links__nav">Reviews</NavLink>
             </div>
