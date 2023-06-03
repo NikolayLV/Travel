@@ -10,6 +10,7 @@
       margin: 0;
       padding-top: 200px;
       padding-bottom: 300px;
+      color: rgb(33 101 84 / 99%);
     }
   }
 }
@@ -79,3 +80,61 @@ text-align: start;
   color: #404040;
   text-align: start;
 }
+
+.div__a {
+  display: flex;
+  justify-content: start;
+  .art__a {
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 29px;
+    color: #6383e1;
+    text-align: start;
+    text-decoration: none;
+    border: 0px;
+    transition: 0.5s;
+  }
+  .art__a:hover {
+    color: #305fe1;
+    transition: 0.5s;
+  }
+}
+
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0,0,0,0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+}
+
+.modal.active {
+  transform: scale(1);
+}
+.modal__content {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: white;
+  transform: scale(0);
+  transition: 1.5s;
+}
+
+.modal__content.active {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: white;
+  transform: scale(1);
+  transition: 1.5s;
+}
+
+.cardd {
+  display: none;
+}
+

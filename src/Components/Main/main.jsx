@@ -12,8 +12,11 @@ import plan3 from "../Assets/plan3.png";
 import loc1 from "../Assets/loc1.png";
 import loc2 from "../Assets/loc2.png";
 import loc3 from "../Assets/loc3.png";
-import React, {useState} from "react";
 import Modal from "../Modal/Modal";
+import React, {useState} from "react";
+import Slider from "../Slider/Slider";
+import App from "../Slider/Slider";
+
 
 
 const Locations = (props) => {
@@ -26,8 +29,24 @@ const Locations = (props) => {
     )
 }
 
+const Articles = (props) => {
+    return (
+        <div className="art">
+            <img className="art__img" src={props.article.image} alt="article"/>
+            <div className="art__info">
+                <p className="art__country">{props.article.country}</p>
+                <p className="art__date">{props.article.date}</p>
+            </div>
+            <p className="art__topic">{props.article.topic}</p>
+            <p className="art__text">{props.article.text}</p>
+        </div>
+    )
+}
+
 const Main = (props) => {
     let locationItems = props.locations.map(locations => <Locations locations={locations}/>)
+    let article = props.articles.slice(0, 4);
+    let articleItems = article.map(article => <Articles article={article}/>);
     return (
 
         <section className="container">
@@ -80,6 +99,7 @@ const Main = (props) => {
 
 
                 </div>
+
                 <div className="plan__items">
                     <div className="plan__card">
                         <img src={plan1} className="plan__img" alt=""/>
@@ -135,6 +155,13 @@ const Main = (props) => {
                 {locationItems}
 
             </section>
+            <div className="art__block">
+                {articleItems}
+            </div>
+
+            <div className="slider">
+                <App/>
+            </div>
         </section>
 
 

@@ -9,6 +9,7 @@ import Destination from "./Components/Destination/Destination";
 import state from "./Data/Data";
 import Footer from "./Components/Footer/footer";
 import Stories from "./Components/Stories/Stories";
+import Slider from "../src/Components/Slider/Slider";
 
 
 function App(props) {
@@ -18,10 +19,11 @@ function App(props) {
             <Header active={modalActive} setActive={setModalActive}/>
             <Modal active={modalActive} setActive={setModalActive}/>
             <Routes>
-                <Route path='/' element={<Main locations={state.locations}/>}/>
+                <Route path='/' element={<Main articles={state.articles} locations={state.locations}/>}/>
                 <Route path='/posts' element={<PostsContainer store={props.store} dispatch={props.dispatch}/>}/>
                 <Route path='/destination' element={<Destination places={state.places}/>}></Route>
                 <Route path='/stories' element={<Stories articles={state.articles}/>}></Route>
+                <Route path="/" element={<Slider articles={state.articles}/>}></Route>
             </Routes>
             <Footer/>
         </div>

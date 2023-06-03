@@ -36,9 +36,10 @@
     font-family: 'Urbanist';
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 29px;
     color: #5B5B5B;
+    margin: 0;
   }
   .place__h2 {
     font-family: 'Urbanist';
@@ -47,7 +48,8 @@
     font-size: 20px;
     line-height: 43px;
     color: #000000;
-    text-align: start;
+    text-align: center;
+    margin: 0 0 40px 0;
   }
 }
 
