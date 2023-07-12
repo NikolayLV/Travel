@@ -55,28 +55,39 @@ body {
       font-weight: 500;
       font-size: 20px;
       line-height: 29px;
+      border: 0;
       color: #FFFFFF;
       text-decoration: none;
       margin: 0 20px 0 20px;
       background: none;
+      transition: 0.5s;
+    }
+    .login__header:hover {
+      color: #bda4a4;
+      transition: 0.5s;
     }
 
     .login__header2 {
       font-family: 'Urbanist';
       font-style: normal;
       font-weight: 500;
-      font-size: 24px;
+      font-size: 22px;
       line-height: 29px;
       color: black;
       text-decoration: none;
-      margin: 0 20px 0 20px;
+      margin: 0 10px 0 10px;
       justify-content: center;
       align-items: center;
-      padding: 10px;
+      padding: 2px;
       gap: 10px;
       width: 100px;
       background: #FFFFFF;
       border-radius: 40px;
+      transition: 0.5s;
+    }
+    .login__header2:hover {
+      background: #b0b5bb;
+      transition: 0.5s;
     }
 
 

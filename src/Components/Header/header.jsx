@@ -14,7 +14,7 @@ const Header = ({active, setActive}) => {
                 <NavLink to="/destination" className="links__nav">Destination</NavLink>
                 <NavLink to="/stories" className="links__nav">Stories</NavLink>
                 <NavLink to="/posts" className="links__nav">Blog</NavLink>
-                <NavLink to="/" className="links__nav">Reviews</NavLink>
+                <NavLink to="/reviews" className="links__nav">Reviews</NavLink>
             </div>
             <div className="header__left">
                 <img src={search} className="search__img" alt=""/>

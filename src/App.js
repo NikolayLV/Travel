@@ -10,6 +10,7 @@ import state from "./Data/Data";
 import Footer from "./Components/Footer/footer";
 import Stories from "./Components/Stories/Stories";
 import Slider from "../src/Components/Slider/Slider";
+import Reviews from "../src/Components/Reviews/reviews";
 
 
 function App(props) {
@@ -23,6 +24,7 @@ function App(props) {
                 <Route path='/posts' element={<PostsContainer store={props.store} dispatch={props.dispatch}/>}/>
                 <Route path='/destination' element={<Destination places={state.places}/>}></Route>
                 <Route path='/stories' element={<Stories articles={state.articles}/>}></Route>
+                <Route path='/reviews' element={<Reviews/>}></Route>
                 <Route path="/" element={<Slider articles={state.articles}/>}></Route>
             </Routes>
             <Footer/>
